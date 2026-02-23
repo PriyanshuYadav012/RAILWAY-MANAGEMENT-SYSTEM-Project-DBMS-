@@ -179,11 +179,6 @@ The system was tested using sample datasets for all major entities. Validation c
 - Better reporting and monitoring support
 - Easy extension for future modules
 
-## 13. Limitations
-- Prototype-level authentication and authorization
-- No real-time train tracking integration
-- Limited UI scope (if implemented as DB-only project)
-- No online payment gateway integration in base version
 
 ## 14. Future Enhancements
 1. Add role-based login for admin, staff, and passengers.
