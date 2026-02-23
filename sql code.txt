@@ -1,6 +1,6 @@
 -- Create Database
 CREATE DATABASE RailwayManagementDB;
-USE RailwayDB;
+USE RailwayManagementDB;
 
 -- =========================
 -- PASSENGER TABLE
