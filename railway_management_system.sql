@@ -2,8 +2,8 @@
 -- Compatible with MySQL 8+
 
 DROP DATABASE IF EXISTS railway_management_system;
-CREATE DATABASE railway_management_system;
-USE railway_management_system;
+CREATE DATABASE RailwayManagementDB;
+USE RailwayManagementDB;
 
 -- 1. MASTER TABLES
 CREATE TABLE passenger (
