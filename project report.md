@@ -157,13 +157,6 @@ SET booking_status = 'Cancelled'
 WHERE ticket_id = 5001;
 ```
 
-## 10. Expected Outputs
-- Successful registration and storage of passenger records
-- Ticket booking linked to train and station details
-- Accurate booking status updates (confirmed/cancelled/waiting)
-- Query-based retrieval of passenger and train information
-- Summary reports for administrators
-
 ## 11. Testing and Validation
 The system was tested using sample datasets for all major entities. Validation checks included:
 - Foreign key integrity checks (invalid references rejected)
@@ -178,15 +171,6 @@ The system was tested using sample datasets for all major entities. Validation c
 - Reduced manual errors
 - Better reporting and monitoring support
 - Easy extension for future modules
-
-
-## 14. Future Enhancements
-1. Add role-based login for admin, staff, and passengers.
-2. Integrate live train status APIs.
-3. Implement dynamic fare calculation and quota handling.
-4. Add waitlist prioritization and automatic seat allocation.
-5. Build a web/mobile interface for end users.
-6. Add analytics dashboard for occupancy and revenue.
 
 ## 15. Conclusion
 The Railway Management System demonstrates practical DBMS implementation for a complex, real-life domain. By applying relational design principles and SQL operations, the project ensures organized data storage, efficient transaction handling, and reliable query processing. The current system establishes a strong foundation that can be scaled into a full-featured railway reservation platform.
