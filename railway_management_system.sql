@@ -1,5 +1,4 @@
--- Railway Management System SQL Script
--- Compatible with MySQL 8+
+-- Railway Management System SQL Database Schema and Sample Data
 
 DROP DATABASE IF EXISTS railway_management_system;
 CREATE DATABASE RailwayManagementDB;
@@ -161,8 +160,7 @@ LIMIT 1;
 
 -- 6. CORE OPERATIONS
 
--- A) BOOK A NEW TICKET (example)
--- Replace values as needed
+-- A) BOOK A NEW TICKET
 INSERT INTO ticket (passenger_id, train_id, source_station_id, destination_station_id, journey_date, seat_number, booking_status, fare)
 VALUES (1, 12952, 6, 1, '2026-03-15', 'A1-12', 'Confirmed', 2200.00);
 
@@ -262,7 +260,3 @@ JOIN passenger p ON p.passenger_id = t.passenger_id
 JOIN train tr ON tr.train_id = t.train_id
 JOIN station ss ON ss.station_id = t.source_station_id
 JOIN station ds ON ds.station_id = t.destination_station_id;
-
--- Example:
--- SELECT * FROM v_ticket_details;
-
