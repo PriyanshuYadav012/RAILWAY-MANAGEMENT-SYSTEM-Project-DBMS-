@@ -1,14 +1,27 @@
-# Project Report: Railway Management System
+# Railway Management System (RMS)
+## Project Report
 
-## 1. Title
-**Railway Management System (RMS)**
+## Table of Contents
+1. [Abstract](#abstract)
+2. [Objectives](#objectives)
+3. [Problem Statement](#problem-statement)
+4. [Scope of the Project](#scope-of-the-project)
+5. [Methodology](#methodology)
+6. [System Requirements](#system-requirements)
+7. [Database Design](#database-design)
+8. [Key SQL Operations](#key-sql-operations)
+9. [Testing and Validation](#testing-and-validation)
+10. [Advantages](#advantages)
+11. [Conclusion](#conclusion)
 
-## 2. Abstract
+
+## Abstract
 The Railway Management System is a database-driven project developed to automate and streamline core railway operations such as passenger registration, train scheduling, station management, ticket booking, seat allocation, and payment tracking. Traditional manual methods for reservation and record management are time-consuming and error-prone. This project demonstrates how a relational database can improve data consistency, reduce redundancy, and support fast retrieval of operational information.
 
 The system is designed using DBMS concepts including entity-relationship modeling, normalization, primary and foreign key constraints, and structured query language (SQL) operations. It aims to provide a practical implementation of transactional data handling in a real-world domain.
 
-## 3. Objectives
+
+## Objectives
 1. Design a normalized relational database for railway operations.
 2. Maintain accurate records of trains, routes, stations, and schedules.
 3. Manage passenger details and reservation history.
@@ -16,10 +29,12 @@ The system is designed using DBMS concepts including entity-relationship modelin
 5. Demonstrate SQL operations: `CREATE`, `INSERT`, `UPDATE`, `DELETE`, and `SELECT` with joins and aggregations.
 6. Ensure data integrity through constraints and relational mappings.
 
-## 4. Problem Statement
+
+## Problem Statement
 Railway operations involve large volumes of interconnected data, including passenger details, train routes, timetable information, and ticket transactions. Manual or poorly structured systems lead to duplicate records, booking conflicts, delayed query response, and weak reporting capabilities. A robust DBMS solution is required to organize this data systematically and support reliable reservation workflows.
 
-## 5. Scope of the Project
+
+## Scope of the Project
 The project covers the following modules:
 - Passenger Management
 - Train and Station Management
@@ -28,12 +43,8 @@ The project covers the following modules:
 - Payment and Booking Status
 - Basic administrative reporting
 
-Out of scope:
-- Real-time GPS tracking
-- Dynamic fare prediction using ML
-- Integration with external payment gateways
 
-## 6. Methodology
+## Methodology
 The project was developed in the following phases:
 1. Requirement analysis and module definition
 2. ER model design and entity identification
@@ -42,21 +53,10 @@ The project was developed in the following phases:
 5. Query testing and output verification
 6. Documentation and report preparation
 
-## 7. System Requirements
-### Hardware Requirements
-- Processor: Intel i3 or above
-- RAM: 4 GB minimum
-- Storage: 500 MB free space
 
-### Software Requirements
-- Operating System: Windows/Linux/macOS
-- DBMS: MySQL / PostgreSQL (any relational DBMS)
-- SQL Client: MySQL Workbench / pgAdmin / CLI
-- Optional Frontend: HTML/CSS/JS or any basic UI tool
+## Database Design
 
-## 8. Database Design
-
-### 8.1 Main Entities
+### Main Entities
 - `Passenger`
 - `Train`
 - `Station`
@@ -65,8 +65,7 @@ The project was developed in the following phases:
 - `Ticket`
 - `Payment`
 
-### 8.2 Sample Relational Schema
-
+### Sample Relational Schema
 #### Passenger
 - `passenger_id` (PK)
 - `full_name`
@@ -119,13 +118,13 @@ The project was developed in the following phases:
 - `payment_status`
 - `transaction_date`
 
-### 8.3 Normalization
+
+### Normalization
 - **1NF:** Atomic values only; no repeating groups.
 - **2NF:** Non-key attributes fully depend on the primary key.
 - **3NF:** Transitive dependencies minimized by separating payment, passenger, train, and schedule details.
 
-## 9. Key SQL Operations (Illustrative)
-
+## Key SQL Operations
 ### Insert Passenger
 ```sql
 INSERT INTO Passenger (passenger_id, full_name, age, gender, phone, email)
@@ -157,25 +156,13 @@ SET booking_status = 'Cancelled'
 WHERE ticket_id = 5001;
 ```
 
-## 11. Testing and Validation
-The system was tested using sample datasets for all major entities. Validation checks included:
-- Foreign key integrity checks (invalid references rejected)
-- Duplicate primary key rejection
-- Correct status updates after cancellation
-- Correct output of multi-table join queries
-- Data consistency after multiple insert/update operations
-
-## 12. Advantages
+## Advantages
 - Centralized and structured data management
 - Faster retrieval of booking and train details
 - Reduced manual errors
 - Better reporting and monitoring support
 - Easy extension for future modules
 
-## 15. Conclusion
-The Railway Management System demonstrates practical DBMS implementation for a complex, real-life domain. By applying relational design principles and SQL operations, the project ensures organized data storage, efficient transaction handling, and reliable query processing. The current system establishes a strong foundation that can be scaled into a full-featured railway reservation platform.
 
-## 16. References
-1. Silberschatz, Korth, Sudarshan - *Database System Concepts*.
-2. Elmasri & Navathe - *Fundamentals of Database Systems*.
-3. Official MySQL / PostgreSQL documentation.
+## Conclusion
+The Railway Management System demonstrates practical DBMS implementation for a complex, real-life domain. By applying relational design principles and SQL operations, the project ensures organized data storage, efficient transaction handling, and reliable query processing. The current system establishes a strong foundation that can be scaled into a full-featured railway reservation platform.
