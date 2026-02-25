@@ -1,6 +1,4 @@
--- Railway Management System SQL Database Schema and Sample Data
-
-DROP DATABASE IF EXISTS railway_management_system;
+-- Creating database and using it
 CREATE DATABASE RailwayManagementDB;
 USE RailwayManagementDB;
 
