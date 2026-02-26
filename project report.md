@@ -7,12 +7,11 @@
 3. [Problem Statement](#problem-statement)
 4. [Scope of the Project](#scope-of-the-project)
 5. [Methodology](#methodology)
-6. [System Requirements](#system-requirements)
-7. [Database Design](#database-design)
-8. [Key SQL Operations](#key-sql-operations)
-9. [Testing and Validation](#testing-and-validation)
-10. [Advantages](#advantages)
-11. [Conclusion](#conclusion)
+6. [Database Design](#database-design)
+7. [Key SQL Operations](#key-sql-operations)
+8. [Testing and Validation](#testing-and-validation)
+9. [Advantages](#advantages)
+10. [Conclusion](#conclusion)
 
 
 ## Abstract

@@ -26,7 +26,7 @@ DBMS-PROJECT-2CSE13/
 
 2. `project report.md`
 - Full written report of the project.
-- Covers abstract, objectives, problem statement, scope, methodology, and system requirements.
+- Covers abstract, objectives, problem statement, scope, methodology.
 - Documents ER model, schema design logic, and SQL feature usage.
 
 3. `ER Digram.png`
