@@ -36,3 +36,6 @@ DBMS-PROJECT-2CSE13/
 4. `README.md`
 - Repository guide file.
 - Contains project summary, folder structure, and file-level analysis.
+
+## MADE BY 
+Priyanshu Yadav and Pari
